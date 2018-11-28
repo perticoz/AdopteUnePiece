@@ -14,11 +14,15 @@ import { FooterComponent } from './All/footer/footer.component';
 import { PartGroupsComponent } from './Buyer/part-groups/part-groups.component';
 import { PanierComponent } from './Buyer/panier/panier.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { ConnexionComponent } from './Sign-up/connexion/connexion.component';
+import { CreationCompteComponent } from './Sign-up/creation-compte/creation-compte.component';
 
 const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
   { path: 'partGroups', component: PartGroupsComponent },
-  { path: 'panier', component: PanierComponent}
+  { path: 'panier', component: PanierComponent},
+  { path: 'connexion', component: ConnexionComponent},
+
 ];
 
 @NgModule({
@@ -33,6 +37,8 @@ const routes: Routes = [
     NavbarComponent,
     SearchBarComponent,
     PanierComponent,
+    ConnexionComponent,
+    CreationCompteComponent,
   ],
   imports: [
     BrowserModule,
