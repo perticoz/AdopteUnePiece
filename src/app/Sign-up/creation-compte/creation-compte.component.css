@@ -1,0 +1,25 @@
+.titlewline {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.titlewline:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        height: 1px;
+        width: 100%;
+        background: #cacaca;
+}
+
+.titlewline__title {
+    display: inline-block;
+    position: relative;
+    line-height: 20px;
+    font-size: 20px;
+    color: #144a82;
+    background: white;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
