@@ -13,6 +13,8 @@ import { SearchBarComponent } from './Buyer/buyer-home/search-bar/search-bar.com
 import { FooterComponent } from './All/footer/footer.component';
 import { PartGroupsComponent } from './Buyer/part-groups/part-groups.component';
 import { PanierComponent } from './Buyer/panier/panier.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
 
 const routes: Routes = [
@@ -38,6 +40,8 @@ const routes: Routes = [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatExpansionModule,
+    MatCardModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],
