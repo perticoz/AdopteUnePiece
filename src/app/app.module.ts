@@ -16,13 +16,14 @@ import { PanierComponent } from './Buyer/panier/panier.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import { ConnexionComponent } from './Sign-up/connexion/connexion.component';
 import { CreationCompteComponent } from './Sign-up/creation-compte/creation-compte.component';
+import { AnnouncePieceComponent } from './Buyer/announce-piece/announce-piece.component';
 
 const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
   { path: 'partGroups', component: PartGroupsComponent },
   { path: 'panier', component: PanierComponent},
   { path: 'connexion', component: ConnexionComponent},
-
+  { path: 'announcePiece', component: AnnouncePieceComponent }
 ];
 
 @NgModule({
@@ -39,6 +40,7 @@ const routes: Routes = [
     PanierComponent,
     ConnexionComponent,
     CreationCompteComponent,
+    AnnouncePieceComponent,
   ],
   imports: [
     BrowserModule,

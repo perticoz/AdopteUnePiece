@@ -1,9 +1,15 @@
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 @media screen and (max-width: 8000px)
 
 {
     footer {
         background-color: orange;
-        position: absolute;
+        position: static;
+        margin-top: 20px;
         bottom:0; left:0; right:0;
     }
 
