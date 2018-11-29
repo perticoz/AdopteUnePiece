@@ -37,6 +37,8 @@ const routes: Routes = [
   { path: 'creation-compte', component: CreationCompteComponent},
   { path: 'announce-piece', component: AnnouncePieceComponent },
   { path: 'connexion', component: ConnexionComponent},  
+  { path: 'creationCompte', component: CreationCompteComponent},
+  { path: 'announce-piece', component: AnnouncePieceComponent},
   { path: 'announce-list', component: AnnouncesListComponent}
 ];
 
