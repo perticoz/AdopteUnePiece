@@ -14,6 +14,8 @@ import { FooterComponent } from './All/footer/footer.component';
 import { PartGroupsComponent } from './Buyer/part-groups/part-groups.component';
 import { PanierComponent } from './Buyer/panier/panier.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { ConnexionComponent } from './Sign-up/connexion/connexion.component';
+import { CreationCompteComponent } from './Sign-up/creation-compte/creation-compte.component';
 import { AnnouncePieceComponent } from './Buyer/announce-piece/announce-piece.component';
 import { AnnouncesListComponent } from './Buyer/announces-list/announces-list.component';
 import { AnnounceItemComponent } from './Buyer/announce-item/announce-item.component';
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
   { path: 'partgroups', component: PartGroupsComponent },
   { path: 'panier', component: PanierComponent},
+  { path: 'connexion', component: ConnexionComponent},  
   { path: 'announcepiece', component: AnnouncePieceComponent},
   { path: 'announcelist', component: AnnouncesListComponent}
 ];
@@ -40,7 +43,9 @@ const routes: Routes = [
     PanierComponent,
     AnnouncesListComponent,
     AnnounceItemComponent,
-    AnnouncePieceComponent
+    AnnouncePieceComponent,
+    ConnexionComponent,
+    CreationCompteComponent
   ],
   imports: [
     BrowserModule,
