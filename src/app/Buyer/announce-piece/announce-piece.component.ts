@@ -12,6 +12,7 @@ export class AnnouncePieceComponent implements OnInit {
   placeholderForDBAnnounce = {
     prix:20,
     titre:"Vend axe aprilia rs125",
+    vendeur:"Lyon pièces auto Recycling",
     miniature:"",
     image:"https://media.50factory.com/191617-large_default/axe-de-bras-oscillant-aprilia-rs-50-et-tuono-de-1999-a-2005-14x223.jpg",
     etat:"disponible",
