@@ -24,8 +24,10 @@ const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
   { path: 'partgroups', component: PartGroupsComponent },
   { path: 'panier', component: PanierComponent},
+  { path: 'connexion', component: ConnexionComponent},
+  { path: 'creationCompte', component: CreationCompteComponent},
+  { path: 'announcePiece', component: AnnouncePieceComponent },
   { path: 'connexion', component: ConnexionComponent},  
-  { path: 'announcepiece', component: AnnouncePieceComponent},
   { path: 'announcelist', component: AnnouncesListComponent}
 ];
 
