@@ -21,6 +21,34 @@ import { CreationCompteComponent } from './Sign-up/creation-compte/creation-comp
 import { AnnouncePieceComponent } from './Buyer/announce-piece/announce-piece.component';
 import { AnnouncesListComponent } from './Buyer/announces-list/announces-list.component';
 import { AnnounceItemComponent } from './Buyer/announce-item/announce-item.component';
+import { BoiteAirComponent } from './Buyer/part-item-moteur/part-item-boiteAir/boite-air/boite-air.component';
+import { FiltreAirComponent } from './Buyer/part-item-moteur/part-item-boiteAir/filtre-air/filtre-air.component';
+import { CableAccelerateurComponent } from './Buyer/part-item-moteur/part-item-cables/cable-accelerateur/cable-accelerateur.component';
+import { CableEmbrayageComponent } from './Buyer/part-item-moteur/part-item-cables/cable-embrayage/cable-embrayage.component';
+import { CableStarterComponent } from './Buyer/part-item-moteur/part-item-cables/cable-starter/cable-starter.component';
+import { BrideComponent } from './Buyer/part-item-moteur/part-item-carburationInjection/bride/bride.component';
+import { CarburateurComponent } from './Buyer/part-item-moteur/part-item-carburationInjection/carburateur/carburateur.component';
+import { InjectionComponent } from './Buyer/part-item-moteur/part-item-carburationInjection/injection/injection.component';
+import { PipeAdmissionComponent } from './Buyer/part-item-moteur/part-item-carburationInjection/pipe-admission/pipe-admission.component';
+import { DemarreurComponent } from './Buyer/part-item-moteur/part-item-demarreur/demarreur/demarreur.component';
+import { RoueDemarreurComponent } from './Buyer/part-item-moteur/part-item-demarreur/roue-demarreur/roue-demarreur.component';
+import { CollecteurComponent } from './Buyer/part-item-moteur/part-item-echappement/collecteur/collecteur.component';
+import { PotComponent } from './Buyer/part-item-moteur/part-item-echappement/pot/pot.component';
+import { SondeComponent } from './Buyer/part-item-moteur/part-item-echappement/sonde/sonde.component';
+import { AxeMoteurComponent } from './Buyer/part-item-moteur/part-item-moteur/axe-moteur/axe-moteur.component';
+import { CarterDroitComponent } from './Buyer/part-item-moteur/part-item-moteur/carter-droit/carter-droit.component';
+import { CarterGaucheComponent } from './Buyer/part-item-moteur/part-item-moteur/carter-gauche/carter-gauche.component';
+import { MoteurCompletComponent } from './Buyer/part-item-moteur/part-item-moteur/moteur-complet/moteur-complet.component';
+import { PieceMoteurDetailComponent } from './Buyer/part-item-moteur/part-item-moteur/piece-moteur-detail/piece-moteur-detail.component';
+import { BouchonRadiateurComponent } from './Buyer/part-item-moteur/part-item-radiateur/bouchon-radiateur/bouchon-radiateur.component';
+import { CalorstatComponent } from './Buyer/part-item-moteur/part-item-radiateur/calorstat/calorstat.component';
+import { DuriteRefroidissementComponent } from './Buyer/part-item-moteur/part-item-radiateur/durite-refroidissement/durite-refroidissement.component';
+import { RadiateurComponent } from './Buyer/part-item-moteur/part-item-radiateur/radiateur/radiateur.component';
+import { RadiateurCompletComponent } from './Buyer/part-item-moteur/part-item-radiateur/radiateur-complet/radiateur-complet.component';
+import { VaseExpansionComponent } from './Buyer/part-item-moteur/part-item-radiateur/vase-expansion/vase-expansion.component';
+import { VentilateurComponent } from './Buyer/part-item-moteur/part-item-radiateur/ventilateur/ventilateur.component';
+
+
 
 const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
@@ -49,7 +77,33 @@ const routes: Routes = [
     AnnounceItemComponent,
     AnnouncePieceComponent,
     ConnexionComponent,
-    CreationCompteComponent
+    CreationCompteComponent,
+    BoiteAirComponent,
+    FiltreAirComponent,
+    CableAccelerateurComponent,
+    CableEmbrayageComponent,
+    CableStarterComponent,
+    BrideComponent,
+    CarburateurComponent,
+    InjectionComponent,
+    PipeAdmissionComponent,
+    DemarreurComponent,
+    RoueDemarreurComponent,
+    CollecteurComponent,
+    PotComponent,
+    SondeComponent,
+    AxeMoteurComponent,
+    CarterDroitComponent,
+    CarterGaucheComponent,
+    MoteurCompletComponent,
+    PieceMoteurDetailComponent,
+    BouchonRadiateurComponent,
+    CalorstatComponent,
+    DuriteRefroidissementComponent,
+    RadiateurComponent,
+    RadiateurCompletComponent,
+    VaseExpansionComponent,
+    VentilateurComponent
   ],
   imports: [
     BrowserModule,
