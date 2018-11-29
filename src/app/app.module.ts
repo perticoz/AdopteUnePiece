@@ -17,14 +17,18 @@ import {MatStepperModule} from '@angular/material/stepper';
 import { ConnexionComponent } from './Sign-up/connexion/connexion.component';
 import { CreationCompteComponent } from './Sign-up/creation-compte/creation-compte.component';
 import { AnnouncePieceComponent } from './Buyer/announce-piece/announce-piece.component';
+import { AnnouncesListComponent } from './Buyer/announces-list/announces-list.component';
+import { AnnounceItemComponent } from './Buyer/announce-item/announce-item.component';
 
 const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
-  { path: 'partGroups', component: PartGroupsComponent },
+  { path: 'partgroups', component: PartGroupsComponent },
   { path: 'panier', component: PanierComponent},
   { path: 'connexion', component: ConnexionComponent},
   { path: 'creationCompte', component: CreationCompteComponent},
-  { path: 'announcePiece', component: AnnouncePieceComponent }
+  { path: 'announcePiece', component: AnnouncePieceComponent },
+  { path: 'connexion', component: ConnexionComponent},  
+  { path: 'announcelist', component: AnnouncesListComponent}
 ];
 
 @NgModule({
@@ -39,9 +43,11 @@ const routes: Routes = [
     NavbarComponent,
     SearchBarComponent,
     PanierComponent,
-    ConnexionComponent,
-    CreationCompteComponent,
+    AnnouncesListComponent,
+    AnnounceItemComponent,
     AnnouncePieceComponent,
+    ConnexionComponent,
+    CreationCompteComponent
   ],
   imports: [
     BrowserModule,
