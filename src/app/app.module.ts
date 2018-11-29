@@ -22,11 +22,11 @@ import { AnnounceItemComponent } from './Buyer/announce-item/announce-item.compo
 
 const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
-  { path: 'partgroups', component: PartGroupsComponent },
+  { path: 'part-groups', component: PartGroupsComponent },
   { path: 'panier', component: PanierComponent},
   { path: 'connexion', component: ConnexionComponent},  
-  { path: 'announcepiece', component: AnnouncePieceComponent},
-  { path: 'announcelist', component: AnnouncesListComponent}
+  { path: 'announce-piece', component: AnnouncePieceComponent},
+  { path: 'announce-list', component: AnnouncesListComponent}
 ];
 
 @NgModule({
