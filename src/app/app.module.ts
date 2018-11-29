@@ -13,10 +13,17 @@ import { SearchBarComponent } from './Buyer/buyer-home/search-bar/search-bar.com
 import { FooterComponent } from './All/footer/footer.component';
 import { PartGroupsComponent } from './Buyer/part-groups/part-groups.component';
 import { PanierComponent } from './Buyer/panier/panier.component';
-import {MatStepperModule} from '@angular/material/stepper';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule, MatInput } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConnexionComponent } from './Sign-up/connexion/connexion.component';
 import { CreationCompteComponent } from './Sign-up/creation-compte/creation-compte.component';
 import { AnnouncePieceComponent } from './Buyer/announce-piece/announce-piece.component';
+
+
 
 const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
@@ -44,8 +51,15 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    MatTableModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatStepperModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],
