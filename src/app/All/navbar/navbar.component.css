@@ -1,3 +1,7 @@
+.navbar {
+    z-index: 600000;
+}
+
 @media screen and (max-width: 8000px)
 
 {

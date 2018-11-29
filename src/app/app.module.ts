@@ -13,24 +13,35 @@ import { SearchBarComponent } from './Buyer/buyer-home/search-bar/search-bar.com
 import { FooterComponent } from './All/footer/footer.component';
 import { PartGroupsComponent } from './Buyer/part-groups/part-groups.component';
 import { PanierComponent } from './Buyer/panier/panier.component';
+<<<<<<< HEAD
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule, MatInput } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+=======
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
+import {MatStepperModule} from '@angular/material/stepper';
+>>>>>>> 6de6cd756fbb8c095fd56baa1a39012f11aad354
 import { ConnexionComponent } from './Sign-up/connexion/connexion.component';
 import { CreationCompteComponent } from './Sign-up/creation-compte/creation-compte.component';
 import { AnnouncePieceComponent } from './Buyer/announce-piece/announce-piece.component';
+import { AnnouncesListComponent } from './Buyer/announces-list/announces-list.component';
+import { AnnounceItemComponent } from './Buyer/announce-item/announce-item.component';
 
 
 
 const routes: Routes = [
   { path: '', component: BuyerHomeComponent },
-  { path: 'partGroups', component: PartGroupsComponent },
+  { path: 'partgroups', component: PartGroupsComponent },
   { path: 'panier', component: PanierComponent},
   { path: 'connexion', component: ConnexionComponent},
-  { path: 'announcePiece', component: AnnouncePieceComponent }
+  { path: 'creationCompte', component: CreationCompteComponent},
+  { path: 'announcePiece', component: AnnouncePieceComponent },
+  { path: 'connexion', component: ConnexionComponent},  
+  { path: 'announcelist', component: AnnouncesListComponent}
 ];
 
 @NgModule({
@@ -45,9 +56,11 @@ const routes: Routes = [
     NavbarComponent,
     SearchBarComponent,
     PanierComponent,
-    ConnexionComponent,
-    CreationCompteComponent,
+    AnnouncesListComponent,
+    AnnounceItemComponent,
     AnnouncePieceComponent,
+    ConnexionComponent,
+    CreationCompteComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +72,12 @@ const routes: Routes = [
     MatFormFieldModule,
     HttpClientModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
     MatStepperModule,
+=======
+    MatExpansionModule,
+    MatCardModule,
+>>>>>>> 6de6cd756fbb8c095fd56baa1a39012f11aad354
     RouterModule.forRoot(routes),
   ],
   providers: [],
