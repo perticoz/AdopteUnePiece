@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'partGroups', component: PartGroupsComponent },
   { path: 'panier', component: PanierComponent},
   { path: 'connexion', component: ConnexionComponent},
+  { path: 'creationCompte', component: CreationCompteComponent},
   { path: 'announcePiece', component: AnnouncePieceComponent }
 ];
 
